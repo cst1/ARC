@@ -16,7 +16,7 @@ cst1 = {
 const pp = x => JSON.stringify(x, null, 2);
 
 cst1.init = () => {
-  console.log(`>> data is ${pp(cst1.data)}`);
+  // console.log(`>> data is ${pp(cst1.data)}`);
   processTabs();
   addTabClickHandlers();
 };

@@ -1,6 +1,4 @@
 // `Professor` tab
-
-// link our tab data into the main page:
 console.log('Linking PROFESSOR tab');
 
 cst1.linkTab('Professor', $div => {
@@ -8,7 +6,7 @@ cst1.linkTab('Professor', $div => {
   $div.append(wrapper);
 
   pic = $(`<img src="img/simon-cst.png" alt="Simon Hunt">`);
-  table = $(`<table></table>`);
+  table = $(`<table>`);
 
   const addRow = (label, value) => {
     tr = $('<tr>');
@@ -19,11 +17,12 @@ cst1.linkTab('Professor', $div => {
 
   const email = `hunts@arc.losrios.edu`;
   const ahref = `<a href="mailto:${email}" target="_blank">${email}</a>`;
+  const cube = cst1.nb('CMC 405 D');
 
   addRow('Professor', 'Simon Hunt');
   addRow('Phone', '(916) 484-8781');
   addRow('Email', ahref);
-  addRow('Office', 'Computer Math Center: CMC&nbsp;405&nbsp;D');
+  addRow('Office', `Computer Math Center: ${cube}`);
   addRow('Office Hours', '4:30&ndash;6:00 PM, Mon&ndash;Thu');
 
   wrapper.append(table);

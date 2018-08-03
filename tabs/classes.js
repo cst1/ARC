@@ -1,32 +1,24 @@
 // `Classes` tab
-
-// link our tab data into the main page:
 console.log('Linking CLASSES tab');
 
 cst1.linkTab('Classes', $div => {
-  wrapper = $('<div class="wrap"></div>');
+  wrapper = $('<div class="wrap">');
   $div.append(wrapper);
 
   wrapper.append($('<h1>Fall 2018</h1>'));
-
-  const addSection = (title, dates) => {
-    const section = $('<section>');
-
-    section.append(subheader(title, dates));
-
-    // const h2 = $('<h2>').html(title);
-    // const h3 = $('<h3>').html(dates);
-    // section.append(h2);
-    // section.append(h3);
-    wrapper.append(section);
-    return section;
-  };
 
   const subheader = (title, dates) => {
     const div = $('<div class="subheader">');
     div.append($('<h2>').html(title));
     div.append($('<h3>').html(dates));
     return div;
+  };
+
+  const addSection = (title, dates) => {
+    const section = $('<section>');
+    section.append(subheader(title, dates));
+    wrapper.append(section);
+    return section;
   };
 
   const addClassData = (section, code, crn, days) => {
@@ -37,7 +29,6 @@ cst1.linkTab('Classes', $div => {
     const p = $('<p>').html(full);
     section.append(p);
   };
-
 
   let section = addSection('First 8 Weeks', cst1.dates('Aug 25', 'Oct 17'));
   addClassData(section, 'CISC 300', 10689, 'M/W');
