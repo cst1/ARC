@@ -4,5 +4,10 @@
 console.log('Linking LINKS tab');
 
 cst1.linkTab('Links', $div => {
-  $div.append($('<h3>').append('This is the Links tab'));
+  wrapper = $('<div class="wrap"></div>');
+  $div.append(wrapper);
+
+  wrapper.append( $('<p>(Coming soon...)</p>') );
+
+
 });

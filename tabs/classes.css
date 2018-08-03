@@ -1,0 +1,17 @@
+/* Stylesheet for Classes Tab */
+
+#Classes .wrap {
+  min-height: 400px;
+  padding: 20px;
+}
+
+#Classes .subheader h2,
+#Classes .subheader h3 {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+#Classes p {
+  margin-left: 20px;
+  color: #ccd;
+}

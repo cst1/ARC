@@ -27,6 +27,14 @@ cst1.linkTab = (title, popfn) => {
   d.tabList.push(title);
 }
 
+cst1.nb = (str, count) => {
+  let c = count || 1;
+  return str.replace(/ /g, '&nbsp;'.repeat(c));
+};
+
+cst1.dates = (d1, d2) => `${cst1.nb(d1)}&mdash;${cst1.nb(d2)}`;
+
+
 function processTabs() {
   const d = cst1.data;
   d.tabList.forEach((tkey, idx) => {
