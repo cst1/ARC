@@ -1,0 +1,31 @@
+/* Stylesheet for Professor Tab */
+
+#Professor .wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+#Professor table {
+  font-size: 24px;
+  color: #eef;
+  margin: 10px;
+}
+
+#Professor td {
+    padding: 12px;
+    line-height: 1.2;
+}
+
+#Professor tr td:first-child {
+  font-style: italic;
+  color: #888;
+  text-align: right;
+}
+
+#Professor img {
+  margin: 20px;
+  height: 260px;
+}

@@ -43,6 +43,11 @@ i {
   cursor: pointer;
 }
 
+a,
+a:visited {
+  color: #bbd;
+}
+
 main {
   position: relative;
   margin: 0 auto;
